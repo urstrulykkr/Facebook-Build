@@ -19,8 +19,13 @@ username:"bobby",
 timeline:"So..tired"
 },
 {
+<<<<<<< HEAD
 	username:"karthik",
 	timeline:"feeling soo luckyy!!"
+=======
+	news_username: "gopi sundar",
+	comment:"Doing something greatt!!"
+>>>>>>> 5b843fb758ec88b9e082c5ed0fb03d12a7d2a24e
 
 },
 {
