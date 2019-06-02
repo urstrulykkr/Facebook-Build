@@ -1,39 +1,65 @@
-var user = [
+var database = [
 {
-	username:"reddykaushik",
+	username:"Kaushik",
 	password:"123"
-}];
-
-var usernameprompt=prompt("Enter username here ");
-var passprompt=prompt("Enter password here ");
-
-var newsfeed = [
-{
-	news_username: "ravi",
-	comment:"Feeling blessed!"
 },
 {
-	news_username: "mahesh",
-	comment:"Doing something greatt!!"
-
+	username:"charan",
+	password:"143"
 },
 {
-	news_username: "tarak",
-	comment:"Ah..life's so so cooll!!"
+	username:"reddy",
+	password:"989"
 }
 ];
 
- function signIN(usernam, pass)
+var newsfeed = [
 {
-	if(usernam === user[0].username && 
-		pass === user[0].password)
+username:"bobby",
+timeline:"So..tired"
+},
+{
+	username:"karthik",
+	timeline:"feeling soo luckyy!!"
+
+},
+{
+	username:"max",
+	timeline:"pizzass..yummyy.!!"
+
+}
+
+];
+
+function Isvalid(userpro,passpro)
+{
+	for (var i = 0; i < database.length; i++) {
+		if(database[i].username === userpro && database[i].password === passpro)
+		{
+			return true;
+		}
+	
+											  }
+            return false; 
+}
+
+
+
+var userpro = prompt("Username:");
+var passpro = prompt("Password:");
+
+function SignIn(username,password)
+{ 
+	
+	
+	if(Isvalid(userpro,passpro))
 	{
 		console.log(newsfeed);
 	}
 	else
 	{
-		alert("Please try again!!");
+		alert("Wrong credentials");
 	}
 }
 
-
+SignIn(userpro,passpro);
