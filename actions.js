@@ -13,7 +13,7 @@ var newsfeed = [
 	comment:"Feeling blessed!"
 },
 {
-	news_username: "mahesh",
+	news_username: "gopi sundar",
 	comment:"Doing something greatt!!"
 
 },
